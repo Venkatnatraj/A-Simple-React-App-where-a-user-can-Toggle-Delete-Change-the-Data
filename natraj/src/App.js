@@ -12,45 +12,46 @@ class App extends Component {
     otherState: 'some other value',
     showPersons: false
   }
-// handleClick=()=>{
-//   this.setState({
-//     persons: [
-//       { name: 'Daneryas', age: 18 },
-//       { name: 'Cersi', age: 29 },
-//       { name: 'Tyrion', age: 32 }
-//     ]
-//   })
-// }
-// handleChange = (e)=>{
-//   this.setState({
-//     persons: [
-//       { name: e.target.value, age: 18 },
-//       { name: e.target.value, age: 29 },
-//       { name: e.target.value, age: 32 }
-//     ]
-//   })
-// }
+
+handleClick=()=>{
+  this.setState({
+    persons: [
+      { name: 'Daneryas', age: 18 },
+      { name: 'Cersi', age: 29 },
+      { name: 'Tyrion', age: 32 }
+    ]
+  })
+}
+
+handleChange = (e)=>{
+  this.setState({
+    persons: [
+      { name: e.target.value, age: 18 },
+      { name: e.target.value, age: 29 },
+      { name: e.target.value, age: 32 }
+    ]
+  })
+}
   
+  toggle = () => {
+    const doesShow = this.state.showPersons;
+    this.setState( { showPersons: !doesShow } );
+  }
 
-  // toggle = () => {
-  //   const doesShow = this.state.showPersons;
-  //   this.setState( { showPersons: !doesShow } );
-  // }
-
-  // toDelete=(Del)=>{
-  //   const persons = [...this.state.persons];
-  //   persons.splice(Del,1);
-  //   this.setState({persons:persons})
-  // }
+  toDelete=(Del)=>{
+    const persons = [...this.state.persons];
+    persons.splice(Del,1);
+    this.setState({persons:persons})
+  }
 
   render () {
-    // const style = {
-    //   backgroundColor: 'white',
-    //   font: 'inherit',
-    //   border: '1px solid blue',
-    //   padding: '8px',
-    //   cursor: 'pointer'
-    // };
+    const style = {
+      backgroundColor: 'white',
+      font: 'inherit',
+      border: '1px solid blue',
+      padding: '8px',
+      cursor: 'pointer'
+    };
     
 
     let persons = null;
