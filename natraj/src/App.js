@@ -12,15 +12,15 @@ class App extends Component {
     otherState: 'some other value',
     showPersons: false
   }
-handleClick=()=>{
-  this.setState({
-    persons: [
-      { name: 'Daneryas', age: 18 },
-      { name: 'Cersi', age: 29 },
-      { name: 'Tyrion', age: 32 }
-    ]
-  })
-}
+// handleClick=()=>{
+//   this.setState({
+//     persons: [
+//       { name: 'Daneryas', age: 18 },
+//       { name: 'Cersi', age: 29 },
+//       { name: 'Tyrion', age: 32 }
+//     ]
+//   })
+// }
 handleChange = (e)=>{
   this.setState({
     persons: [
