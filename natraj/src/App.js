@@ -21,15 +21,15 @@ class App extends Component {
 //     ]
 //   })
 // }
-handleChange = (e)=>{
-  this.setState({
-    persons: [
-      { name: e.target.value, age: 18 },
-      { name: e.target.value, age: 29 },
-      { name: e.target.value, age: 32 }
-    ]
-  })
-}
+// handleChange = (e)=>{
+//   this.setState({
+//     persons: [
+//       { name: e.target.value, age: 18 },
+//       { name: e.target.value, age: 29 },
+//       { name: e.target.value, age: 32 }
+//     ]
+//   })
+// }
   
 
   toggle = () => {
