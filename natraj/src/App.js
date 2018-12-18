@@ -36,11 +36,12 @@ class App extends Component {
   //   const doesShow = this.state.showPersons;
   //   this.setState( { showPersons: !doesShow } );
   // }
-  toDelete=(Del)=>{
-    const persons = [...this.state.persons];
-    persons.splice(Del,1);
-    this.setState({persons:persons})
-  }
+
+  // toDelete=(Del)=>{
+  //   const persons = [...this.state.persons];
+  //   persons.splice(Del,1);
+  //   this.setState({persons:persons})
+  // }
 
   render () {
     const style = {
