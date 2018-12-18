@@ -32,10 +32,10 @@ class App extends Component {
 // }
   
 
-  toggle = () => {
-    const doesShow = this.state.showPersons;
-    this.setState( { showPersons: !doesShow } );
-  }
+  // toggle = () => {
+  //   const doesShow = this.state.showPersons;
+  //   this.setState( { showPersons: !doesShow } );
+  // }
   toDelete=(Del)=>{
     const persons = [...this.state.persons];
     persons.splice(Del,1);
